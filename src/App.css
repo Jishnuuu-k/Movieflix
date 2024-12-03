@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Body{
+    background-color: rgb(37, 34, 34);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav-Bar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
+.Nav-Logo{
+    height: 60px;
+    width: 40%;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.Nav-Options{
+    height: 60px;
+    width: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+.Banner-Contents{
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+    position: relative;
+}
+.Banner-Contents img{
+    height: 100%;
+    width: 100%;
+}
+.Banner-Contents .Banner-Details{
+    height: 600px;
+    width: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; 
+}
+.Banner-Details h1{
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(17, 16, 16);
+}
+.Banner-Details p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(17, 16, 16);
+}
+.row{
+    display: flex;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    gap: 15px;
+
+}
+.row::-webkit-scrollbar {
+    display: none;
+}
+.Gap{
+    height: 10px;
+}
+.card{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    gap: 10px;      
+}
+.Image-Box{
+    height: 250px;
+    width: 180px;
+    
+}
+.Image-Box img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Deatil-Box{
+    height: 50px;
+    width: 130px;
+}
+.Deatil-Box h2{
   color: white;
+    font-size: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.Deatil-Box h3{
+  margin-left: 2px;
+  color: white;
+  font-size: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Footer {
+    background-color: rgb(0, 0, 0);
+    color: #ecf0f1;
+    padding: 20px 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .FooterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
-}
+  
+  .FooterAbout,
+  .FooterLinks,
+  .FooterContact,
+  .FooterFeedback {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 250px;
+  }
+  
+  .FooterAbout h3,
+  .FooterLinks h3,
+  .FooterContact h3,
+  .FooterFeedback h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ecf0f1;
+  }
+  
+  .FooterAbout p,
+  .FooterFeedback p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .FooterLinks ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .FooterLinks ul li {
+    margin-bottom: 10px;
+  }
+  
+  .FooterLinks ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .FooterLinks ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .MapContainer {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  
+  .FooterFeedback form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .FooterFeedback form input,
+  .FooterFeedback form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .FooterFeedback form button {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .FooterFeedback form button:hover {
+    background-color: #c0392b;
+  }
+  
+  .FooterBottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 10px;
+  }
+  
+  .FooterBottom p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .FooterAbout,
+    .FooterLinks,
+    .FooterContact,
+    .FooterFeedback {
+      margin: 10px 0;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .FooterAbout h3,
+    .FooterLinks h3,
+    .FooterContact h3,
+    .FooterFeedback h3 {
+      font-size: 16px;
+    }
+  
+    .FooterAbout p,
+    .FooterFeedback p,
+    .FooterLinks ul li a {
+      font-size: 12px;
+    }
+  
+    .FooterFeedback form input,
+    .FooterFeedback form textarea {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .FooterFeedback form button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
